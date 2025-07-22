@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Radi</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body style="background-image: url(https://i.pinimg.com/1200x/7a/84/66/7a8466e4d1bfa445f15c4ccc44cf5f62.jpg);" class="flex justify-center h-screen items-center">
+
+    <div class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-gray-300 rounded-xl text-center animate__animated animate__fadeInDown m-8 w-80" id="kartu"> 
+        <h1 class="text-3xl">Happy Birthday</h1>
+        <h1 class="text-4xl text-blue-300 font-bold animate__animated animate__heartBeat animate__infinite">Siti Radhiah</h1>
+        <button class="p-2 bg-green-500 text-white rounded mt-5 hover:bg-green-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="ubahKartu()">Klik Disini Yah!</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+        confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: { y: 0.6 },
+});
+let kartu = document.getElementById("kartu");
+function ubahKartu() {
+    kartu.innerHTML =`    <h1 class="font-semibold text-wrap animate__animated animate__zoomIn">
+        Selamat ulang tahun BuBend!
+Semoga apa pun impian yang sedang kamu perjuangkan saat ini bisa tercapai. Semoga Allah selalu memudahkan jalanmu, memberi kekuatan dalam menghadapi tantangan, dan membuka lebih banyak pintu rezeki serta kesempatan baik ke depannya.
+
+Tetap jadi Radi yang ceria, kuat, dan lucu. Semoga makin sukses, makin bahagia!
+
+Sekali lagi, selamat ulang tahun Radi! Semoga hari-harimu ke depan dipenuhi hal-hal baik yang layak kamu dapatkan. 🎂🎉</h1>
+<h2 class="mt-3 animate__animated animate__fadeIn">- From : Amirah -</h2>
+ <button class="p-2 bg-slate-500 text-white rounded mt-5 hover:bg-slate-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="refresh()">Close</button>
+`;
+
+}
+function refresh() {
+    location.reload();
+}
+    </script>
+    
+</body>
+</html>
